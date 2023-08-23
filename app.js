@@ -1,0 +1,52 @@
+const express = require("express");
+const puppeteer = require("puppeteer");
+const fs = require("fs/promises");
+const cors = require('cors');
+
+const app = express();
+const port = 3002;
+
+app.use(cors());
+
+app.get("/convertHtmlToImg", async (req, res) => {
+  try {
+    const browser = await puppeteer.launch({
+        headless:true
+    });
+    const page = await browser.newPage();
+
+    // Set viewport width and height
+    await page.setViewport({ width: 1280, height: 720 });
+
+    // Read the HTML content from the input HTML file
+    const htmlContent = await fs.readFile("index.html", { encoding: "utf8" });
+
+    await page.setContent(htmlContent);
+
+    // Navigate to a data URL with the HTML content
+    await page.goto(`data:text/html,${htmlContent}`, {
+      waitUntil: "networkidle0",
+    });
+
+    // const imageBuffer = await page.screenshot();
+    // Capture screenshot
+    const imageBuffer = await page.screenshot({
+      path: "images/chart.png",
+      type: "png",
+      fullPage: true,
+    });
+
+    await browser.close();
+
+    res.set('Content-Type', 'image/png');
+    // res.send(imageBuffer);
+    res.status(200).send(imageBuffer);
+  } catch (error) {
+    console.error("Error:", error);
+    res.status(500).send("Internal Server Error");
+  }
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});

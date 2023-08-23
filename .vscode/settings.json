@@ -1,0 +1,7 @@
+{
+    "mock-server.settings.paths": {
+        "root": "d:\\Workspace\\puppeteer\\mock",
+        "static": "",
+        "snapshots": "d:\\Workspace\\puppeteer\\snapshots"
+    }
+}

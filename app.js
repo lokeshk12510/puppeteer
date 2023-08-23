@@ -8,6 +8,43 @@ const port = 3002;
 
 app.use(cors());
 
+app.get("/getMockData", async (req,res)=>{
+    try {
+
+        let data = [{
+            "year": "2021",
+            "europe": 2.5,
+            "namerica": 2.5,
+            "asia": 2.1,
+            "lamerica": 1,
+            "meast": 0.8,
+            "africa": 0.4
+          }, {
+            "year": "2022",
+            "europe": 2.6,
+            "namerica": 2.7,
+            "asia": 2.2,
+            "lamerica": 0.5,
+            "meast": 0.4,
+            "africa": 0.3
+          }, {
+            "year": "2023",
+            "europe": 2.8,
+            "namerica": 2.9,
+            "asia": 2.4,
+            "lamerica": 0.3,
+            "meast": 0.9,
+            "africa": 0.5
+          }]
+
+        res.status(200).send(data);
+        
+    } catch (error) {
+        console.error("Error:", error);
+    res.status(500).send("Internal Server Error");
+    }
+})
+
 app.get("/convertHtmlToImg", async (req, res) => {
   try {
     const browser = await puppeteer.launch({
@@ -31,7 +68,7 @@ app.get("/convertHtmlToImg", async (req, res) => {
     // const imageBuffer = await page.screenshot();
     // Capture screenshot
     const imageBuffer = await page.screenshot({
-      path: "images/chart.png",
+      path: `images/chart${new Date().getTime()}.png`,
       type: "png",
       fullPage: true,
     });

@@ -40,6 +40,38 @@ app.post("/GraphGet", async (req, res) => {
   }
 });
 
+app.get("/convertTest", async (req,res)=>{
+  try{
+    const browser = await puppeteer.launch({
+      headless: true,
+    });
+    const page = await browser.newPage();
+
+    // Set viewport width and height
+    await page.setViewport({ width: 1280, height: 720 })
+
+     // Navigate to a data URL with the HTML content
+     await page.goto("https://www.intergy.com.au/", {
+      waitUntil: "networkidle0",
+    });
+
+    const imageBuffer = await page.screenshot({
+      path: `images/chart${new Date().getTime()}.png`,
+      type: "png",
+      fullPage: true,
+    });
+
+    await browser.close();
+
+    res.set("Content-Type", "image/png");
+    // res.send(imageBuffer);
+    res.status(200).send(imageBuffer);
+  }catch (error){
+    console.error("Error:", error);
+    res.status(500).send("Internal Server Error");
+  }
+})
+
 app.get("/convertHtmlToImg", async (req, res) => {
   try {
     const browser = await puppeteer.launch({

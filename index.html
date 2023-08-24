@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PDF Generation</title>
+    <title>ADCO</title>
   </head>
   <body>
     <table class="table-colored mt-15" width="100%">
@@ -140,11 +140,9 @@
         xhr.send();
       }
 
-   
-
       makeAPICallWithPayload(
-        "http://localhost:3002/getMockData",
-        "get",
+        "http://localhost:3002/getData",
+        "post",
         function (error, response) {
           if (error) {
             console.error("Error:", error);

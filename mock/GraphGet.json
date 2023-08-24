@@ -1,0 +1,3373 @@
+{
+  "success": true,
+  "successMessage": "Record returned successfully",
+  "errorMessage": null,
+  "statusCode": 200,
+  "result": {
+    "hseOverall": {
+      "id": 0,
+      "projectId": 1753,
+      "projectName": "New Liverpool Primary School",
+      "period": "JUL23",
+      "hseTotalHoursWork": {
+        "hourADCO_Last": 1906,
+        "hourSub_Last": 6467,
+        "hourTotal_Last": 8373,
+        "hourADCO_This": 1788,
+        "hourSub_This": 7918,
+        "hourTotal_This": 9707,
+        "hourADCO_ToDate": 14494,
+        "hourSub_ToDate": 35200,
+        "hourTotal_ToDate": 49694
+      },
+      "hseAverageWorkers": [
+        {
+          "label": "JUN21",
+          "value": 3
+        },
+        {
+          "label": "JUL21",
+          "value": 3
+        },
+        {
+          "label": "AUG21",
+          "value": 5
+        },
+        {
+          "label": "SEP21",
+          "value": 8
+        },
+        {
+          "label": "OCT21",
+          "value": 6
+        },
+        {
+          "label": "NOV21",
+          "value": 3
+        },
+        {
+          "label": "DEC21",
+          "value": 3
+        },
+        {
+          "label": "JAN22",
+          "value": 2
+        },
+        {
+          "label": "FEB22",
+          "value": 2
+        },
+        {
+          "label": "MAR22",
+          "value": 13
+        },
+        {
+          "label": "APR22",
+          "value": 5
+        },
+        {
+          "label": "MAY22",
+          "value": 6
+        },
+        {
+          "label": "JUN22",
+          "value": 4
+        },
+        {
+          "label": "JUL22",
+          "value": 4
+        },
+        {
+          "label": "DEC22",
+          "value": 0
+        },
+        {
+          "label": "JAN23",
+          "value": 10
+        },
+        {
+          "label": "FEB23",
+          "value": 16
+        },
+        {
+          "label": "MAR23",
+          "value": 28
+        },
+        {
+          "label": "APR23",
+          "value": 32
+        },
+        {
+          "label": "MAY23",
+          "value": 47
+        },
+        {
+          "label": "JUN23",
+          "value": 45
+        },
+        {
+          "label": "JUL23",
+          "value": 40
+        },
+        {
+          "label": "AUG23",
+          "value": 63
+        }
+      ],
+      "hseIncidentInjuries": {
+        "healthThis": 0,
+        "generalThis": 0,
+        "safetyThis": 0,
+        "healthToDate": 0,
+        "generalToDate": 0,
+        "safetyToDate": 0
+      },
+      "hseRegulatoryNotices": {
+        "prohibition_This": 0,
+        "prohibition_Last": 0,
+        "prohibition_toPeriod": 0,
+        "improvement_This": 0,
+        "improvement_Last": 0,
+        "improvement_toPeriod": 0,
+        "infringement_This": 0,
+        "infringement_Last": 0,
+        "infringement_toPeriod": 0,
+        "environmental_This": 0,
+        "environmental_Last": 0,
+        "environmental_toPeriod": 0,
+        "fines_This": 0,
+        "fines_Last": 0,
+        "fines_ToPeriod": 0,
+        "sanctionOther_Last": 0,
+        "sanctionOther_This": 0,
+        "sanctionOther_ToDate": 0
+      }
+    },
+    "qualityView": {
+      "id": 2719,
+      "projectId": 1753,
+      "period": "JUL23",
+      "periodDate": "2023-07-01T00:00:00",
+      "jobId": "3572",
+      "projectName": "New Liverpool Primary School",
+      "periodFlag": -1,
+      "ncradcO_Last": 0,
+      "ncradcO_This": 70,
+      "ncrConsultant_Last": 0,
+      "ncrConsultant_This": 40,
+      "ncrSub_Last": 1,
+      "ncrSub_This": 52,
+      "ncrOpen_Last": 1,
+      "ncrOpen_This": 162,
+      "ncrTotal_Last": 1,
+      "ncrTotal_This": 21,
+      "defectTotal_Last": 0,
+      "defectTotal_This": 61,
+      "defectOpen_Last": 0,
+      "defectOpen_This": 70,
+      "defectRatio_Last": 0,
+      "defectRatio_This": 0,
+      "qpRequired": 0,
+      "qpApproved": 0,
+      "qpOverdue": 0,
+      "itpRequired": 30,
+      "itpApproved": 13,
+      "itpOverdue": 0,
+      "completionDocRequired": 30,
+      "completionDocApproved": 1,
+      "completionDocOverdue": 0,
+      "pC6MonthDate": "2023-08-01T00:00:00",
+      "pC3MonthDate": "2023-10-25T00:00:00",
+      "pC2MonthDate": "2023-11-27T00:00:00",
+      "pC1MonthDate": "2023-12-31T00:00:00",
+      "pC6MonthStrategy": false,
+      "pC3MonthStrategy": true,
+      "pC2MonthStrategy": false,
+      "pC1MonthStrategy": true,
+      "qualityLists": [
+        {
+          "id": 2335,
+          "projectQualId": 69458,
+          "projectId": 1753,
+          "period": "JAN23",
+          "periodDate": "2023-01-01T00:00:00",
+          "projectName": "New Liverpool Primary School",
+          "jobId": "3572",
+          "ncradcO_This": 0,
+          "ncrConsultant_This": 0,
+          "ncrSub_This": 0,
+          "ncrOpen_This": 0,
+          "ncrTotal_This": 0,
+          "defectOpen_This": 0,
+          "defectRatio_This": 0,
+          "defectTotal_This": 0,
+          "ncrMonth": 0,
+          "defects": 0,
+          "createdDate": null,
+          "createdBy": null,
+          "modifiedDate": "2023-02-14T13:36:03",
+          "modifiedBy": "BMatarranz"
+        },
+        {
+          "id": 2380,
+          "projectQualId": 69459,
+          "projectId": 1753,
+          "period": "FEB23",
+          "periodDate": "2023-02-01T00:00:00",
+          "projectName": "New Liverpool Primary School",
+          "jobId": "3572",
+          "ncradcO_This": 0,
+          "ncrConsultant_This": 0,
+          "ncrSub_This": 0,
+          "ncrOpen_This": 0,
+          "ncrTotal_This": 0,
+          "defectOpen_This": 0,
+          "defectRatio_This": 0,
+          "defectTotal_This": 0,
+          "ncrMonth": 0,
+          "defects": 0,
+          "createdDate": null,
+          "createdBy": null,
+          "modifiedDate": "2023-03-09T14:47:28",
+          "modifiedBy": "AliSaleh"
+        },
+        {
+          "id": 2448,
+          "projectQualId": 69460,
+          "projectId": 1753,
+          "period": "MAR23",
+          "periodDate": "2023-03-01T00:00:00",
+          "projectName": "New Liverpool Primary School",
+          "jobId": "3572",
+          "ncradcO_This": 0,
+          "ncrConsultant_This": 0,
+          "ncrSub_This": 0,
+          "ncrOpen_This": 0,
+          "ncrTotal_This": 0,
+          "defectOpen_This": 0,
+          "defectRatio_This": 0,
+          "defectTotal_This": 0,
+          "ncrMonth": 0,
+          "defects": 0,
+          "createdDate": null,
+          "createdBy": null,
+          "modifiedDate": "2023-04-06T10:18:27",
+          "modifiedBy": "AliSaleh"
+        },
+        {
+          "id": 2516,
+          "projectQualId": 69461,
+          "projectId": 1753,
+          "period": "APR23",
+          "periodDate": "2023-04-01T00:00:00",
+          "projectName": "New Liverpool Primary School",
+          "jobId": "3572",
+          "ncradcO_This": 0,
+          "ncrConsultant_This": 0,
+          "ncrSub_This": 0,
+          "ncrOpen_This": 0,
+          "ncrTotal_This": 0,
+          "defectOpen_This": 0,
+          "defectRatio_This": 0,
+          "defectTotal_This": 0,
+          "ncrMonth": 0,
+          "defects": 0,
+          "createdDate": null,
+          "createdBy": null,
+          "modifiedDate": "2023-05-04T14:17:02",
+          "modifiedBy": "AliSaleh"
+        },
+        {
+          "id": 2585,
+          "projectQualId": 69462,
+          "projectId": 1753,
+          "period": "MAY23",
+          "periodDate": "2023-05-01T00:00:00",
+          "projectName": "New Liverpool Primary School",
+          "jobId": "3572",
+          "ncradcO_This": 0,
+          "ncrConsultant_This": 0,
+          "ncrSub_This": 1,
+          "ncrOpen_This": 1,
+          "ncrTotal_This": 1,
+          "defectOpen_This": 0,
+          "defectRatio_This": 0,
+          "defectTotal_This": 0,
+          "ncrMonth": 1,
+          "defects": 0,
+          "createdDate": null,
+          "createdBy": null,
+          "modifiedDate": "2023-06-13T08:53:26",
+          "modifiedBy": "AliSaleh"
+        },
+        {
+          "id": 2655,
+          "projectQualId": 69463,
+          "projectId": 1753,
+          "period": "JUN23",
+          "periodDate": "2023-06-01T00:00:00",
+          "projectName": "New Liverpool Primary School",
+          "jobId": "3572",
+          "ncradcO_This": 0,
+          "ncrConsultant_This": 0,
+          "ncrSub_This": 1,
+          "ncrOpen_This": 1,
+          "ncrTotal_This": 1,
+          "defectOpen_This": 0,
+          "defectRatio_This": 0,
+          "defectTotal_This": 0,
+          "ncrMonth": 0,
+          "defects": 0,
+          "createdDate": null,
+          "createdBy": null,
+          "modifiedDate": "2023-07-28T05:30:38.263",
+          "modifiedBy": "Renuka T"
+        },
+        {
+          "id": 2719,
+          "projectQualId": 69464,
+          "projectId": 1753,
+          "period": "JUL23",
+          "periodDate": "2023-07-01T00:00:00",
+          "projectName": "New Liverpool Primary School",
+          "jobId": "3572",
+          "ncradcO_This": 70,
+          "ncrConsultant_This": 40,
+          "ncrSub_This": 52,
+          "ncrOpen_This": 162,
+          "ncrTotal_This": 21,
+          "defectOpen_This": 70,
+          "defectRatio_This": 0,
+          "defectTotal_This": 61,
+          "ncrMonth": 20,
+          "defects": 61,
+          "createdDate": null,
+          "createdBy": null,
+          "modifiedDate": "2023-08-03T10:08:44.573",
+          "modifiedBy": "Renuka T"
+        },
+        {
+          "id": 2719,
+          "projectQualId": 69464,
+          "projectId": 1753,
+          "period": "JUL23",
+          "periodDate": "2023-07-01T00:00:00",
+          "projectName": "New Liverpool Primary School",
+          "jobId": "3572",
+          "ncradcO_This": 70,
+          "ncrConsultant_This": 40,
+          "ncrSub_This": 52,
+          "ncrOpen_This": 162,
+          "ncrTotal_This": 21,
+          "defectOpen_This": 70,
+          "defectRatio_This": 0,
+          "defectTotal_This": 61,
+          "ncrMonth": 20,
+          "defects": 61,
+          "createdDate": null,
+          "createdBy": null,
+          "modifiedDate": "2023-08-03T10:08:44.573",
+          "modifiedBy": "Renuka T"
+        }
+      ],
+      "currentMonth": "AUG23",
+      "jobToDateRevenue": 27994733.79,
+      "createdDate": null,
+      "createdBy": null,
+      "modifiedDate": "2023-08-03T10:08:44.573",
+      "modifiedBy": "Renuka T"
+    },
+    "prelimsStaffGet": {
+      "employeeLists": [
+        {
+          "employee_name": "Maya KRVAVAC",
+          "employee_title": "Project Engineer",
+          "cost_code": null,
+          "percent_allocated": [
+            {
+              "label": "MAR22",
+              "labelDate": "2022-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR22",
+              "labelDate": "2022-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY22",
+              "labelDate": "2022-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN22",
+              "labelDate": "2022-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL22",
+              "labelDate": "2022-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG22",
+              "labelDate": "2022-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP22",
+              "labelDate": "2022-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT22",
+              "labelDate": "2022-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV22",
+              "labelDate": "2022-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC22",
+              "labelDate": "2022-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN23",
+              "labelDate": "2023-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB23",
+              "labelDate": "2023-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR23",
+              "labelDate": "2023-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR23",
+              "labelDate": "2023-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY23",
+              "labelDate": "2023-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN23",
+              "labelDate": "2023-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL23",
+              "labelDate": "2023-07-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "AUG23",
+              "labelDate": "2023-08-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "SEP23",
+              "labelDate": "2023-09-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "OCT23",
+              "labelDate": "2023-10-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "NOV23",
+              "labelDate": "2023-11-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "DEC23",
+              "labelDate": "2023-12-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "JAN24",
+              "labelDate": "2024-01-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "FEB24",
+              "labelDate": "2024-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR24",
+              "labelDate": "2024-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR24",
+              "labelDate": "2024-04-01T00:00:00",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "employee_name": "Robert Peter TURNER",
+          "employee_title": "Site Manager",
+          "cost_code": null,
+          "percent_allocated": [
+            {
+              "label": "MAR22",
+              "labelDate": "2022-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR22",
+              "labelDate": "2022-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY22",
+              "labelDate": "2022-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN22",
+              "labelDate": "2022-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL22",
+              "labelDate": "2022-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG22",
+              "labelDate": "2022-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP22",
+              "labelDate": "2022-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT22",
+              "labelDate": "2022-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV22",
+              "labelDate": "2022-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC22",
+              "labelDate": "2022-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN23",
+              "labelDate": "2023-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB23",
+              "labelDate": "2023-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR23",
+              "labelDate": "2023-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR23",
+              "labelDate": "2023-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY23",
+              "labelDate": "2023-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN23",
+              "labelDate": "2023-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL23",
+              "labelDate": "2023-07-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "AUG23",
+              "labelDate": "2023-08-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "SEP23",
+              "labelDate": "2023-09-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "OCT23",
+              "labelDate": "2023-10-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "NOV23",
+              "labelDate": "2023-11-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "DEC23",
+              "labelDate": "2023-12-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "JAN24",
+              "labelDate": "2024-01-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "FEB24",
+              "labelDate": "2024-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR24",
+              "labelDate": "2024-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR24",
+              "labelDate": "2024-04-01T00:00:00",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "employee_name": "Antony Zeljko PETKOVIC",
+          "employee_title": "Senior HSE Advisor",
+          "cost_code": null,
+          "percent_allocated": [
+            {
+              "label": "MAR22",
+              "labelDate": "2022-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR22",
+              "labelDate": "2022-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY22",
+              "labelDate": "2022-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN22",
+              "labelDate": "2022-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL22",
+              "labelDate": "2022-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG22",
+              "labelDate": "2022-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP22",
+              "labelDate": "2022-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT22",
+              "labelDate": "2022-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV22",
+              "labelDate": "2022-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC22",
+              "labelDate": "2022-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN23",
+              "labelDate": "2023-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB23",
+              "labelDate": "2023-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR23",
+              "labelDate": "2023-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR23",
+              "labelDate": "2023-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY23",
+              "labelDate": "2023-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN23",
+              "labelDate": "2023-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL23",
+              "labelDate": "2023-07-01T00:00:00",
+              "value": "9"
+            },
+            {
+              "label": "AUG23",
+              "labelDate": "2023-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP23",
+              "labelDate": "2023-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT23",
+              "labelDate": "2023-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV23",
+              "labelDate": "2023-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC23",
+              "labelDate": "2023-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN24",
+              "labelDate": "2024-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB24",
+              "labelDate": "2024-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR24",
+              "labelDate": "2024-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR24",
+              "labelDate": "2024-04-01T00:00:00",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "employee_name": "Ngoc Dan Vy NGUYEN",
+          "employee_title": "Construction Planner",
+          "cost_code": null,
+          "percent_allocated": [
+            {
+              "label": "MAR22",
+              "labelDate": "2022-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR22",
+              "labelDate": "2022-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY22",
+              "labelDate": "2022-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN22",
+              "labelDate": "2022-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL22",
+              "labelDate": "2022-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG22",
+              "labelDate": "2022-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP22",
+              "labelDate": "2022-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT22",
+              "labelDate": "2022-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV22",
+              "labelDate": "2022-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC22",
+              "labelDate": "2022-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN23",
+              "labelDate": "2023-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB23",
+              "labelDate": "2023-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR23",
+              "labelDate": "2023-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR23",
+              "labelDate": "2023-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY23",
+              "labelDate": "2023-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN23",
+              "labelDate": "2023-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL23",
+              "labelDate": "2023-07-01T00:00:00",
+              "value": "11"
+            },
+            {
+              "label": "AUG23",
+              "labelDate": "2023-08-01T00:00:00",
+              "value": "8"
+            },
+            {
+              "label": "SEP23",
+              "labelDate": "2023-09-01T00:00:00",
+              "value": "8"
+            },
+            {
+              "label": "OCT23",
+              "labelDate": "2023-10-01T00:00:00",
+              "value": "8"
+            },
+            {
+              "label": "NOV23",
+              "labelDate": "2023-11-01T00:00:00",
+              "value": "8"
+            },
+            {
+              "label": "DEC23",
+              "labelDate": "2023-12-01T00:00:00",
+              "value": "8"
+            },
+            {
+              "label": "JAN24",
+              "labelDate": "2024-01-01T00:00:00",
+              "value": "8"
+            },
+            {
+              "label": "FEB24",
+              "labelDate": "2024-02-01T00:00:00",
+              "value": "8"
+            },
+            {
+              "label": "MAR24",
+              "labelDate": "2024-03-01T00:00:00",
+              "value": "8"
+            },
+            {
+              "label": "APR24",
+              "labelDate": "2024-04-01T00:00:00",
+              "value": "8"
+            }
+          ]
+        },
+        {
+          "employee_name": "Ben Lewis MATARRANZ",
+          "employee_title": "Project Manager",
+          "cost_code": null,
+          "percent_allocated": [
+            {
+              "label": "MAR22",
+              "labelDate": "2022-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR22",
+              "labelDate": "2022-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY22",
+              "labelDate": "2022-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN22",
+              "labelDate": "2022-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL22",
+              "labelDate": "2022-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG22",
+              "labelDate": "2022-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP22",
+              "labelDate": "2022-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT22",
+              "labelDate": "2022-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV22",
+              "labelDate": "2022-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC22",
+              "labelDate": "2022-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN23",
+              "labelDate": "2023-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB23",
+              "labelDate": "2023-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR23",
+              "labelDate": "2023-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR23",
+              "labelDate": "2023-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY23",
+              "labelDate": "2023-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN23",
+              "labelDate": "2023-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL23",
+              "labelDate": "2023-07-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "AUG23",
+              "labelDate": "2023-08-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "SEP23",
+              "labelDate": "2023-09-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "OCT23",
+              "labelDate": "2023-10-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "NOV23",
+              "labelDate": "2023-11-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "DEC23",
+              "labelDate": "2023-12-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "JAN24",
+              "labelDate": "2024-01-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "FEB24",
+              "labelDate": "2024-02-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "MAR24",
+              "labelDate": "2024-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR24",
+              "labelDate": "2024-04-01T00:00:00",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "employee_name": "Elizabeth Jane CRESWELL",
+          "employee_title": "State Design Manager",
+          "cost_code": null,
+          "percent_allocated": [
+            {
+              "label": "MAR22",
+              "labelDate": "2022-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR22",
+              "labelDate": "2022-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY22",
+              "labelDate": "2022-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN22",
+              "labelDate": "2022-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL22",
+              "labelDate": "2022-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG22",
+              "labelDate": "2022-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP22",
+              "labelDate": "2022-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT22",
+              "labelDate": "2022-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV22",
+              "labelDate": "2022-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC22",
+              "labelDate": "2022-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN23",
+              "labelDate": "2023-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB23",
+              "labelDate": "2023-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR23",
+              "labelDate": "2023-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR23",
+              "labelDate": "2023-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY23",
+              "labelDate": "2023-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN23",
+              "labelDate": "2023-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL23",
+              "labelDate": "2023-07-01T00:00:00",
+              "value": "11"
+            },
+            {
+              "label": "AUG23",
+              "labelDate": "2023-08-01T00:00:00",
+              "value": "9"
+            },
+            {
+              "label": "SEP23",
+              "labelDate": "2023-09-01T00:00:00",
+              "value": "9"
+            },
+            {
+              "label": "OCT23",
+              "labelDate": "2023-10-01T00:00:00",
+              "value": "9"
+            },
+            {
+              "label": "NOV23",
+              "labelDate": "2023-11-01T00:00:00",
+              "value": "9"
+            },
+            {
+              "label": "DEC23",
+              "labelDate": "2023-12-01T00:00:00",
+              "value": "9"
+            },
+            {
+              "label": "JAN24",
+              "labelDate": "2024-01-01T00:00:00",
+              "value": "9"
+            },
+            {
+              "label": "FEB24",
+              "labelDate": "2024-02-01T00:00:00",
+              "value": "9"
+            },
+            {
+              "label": "MAR24",
+              "labelDate": "2024-03-01T00:00:00",
+              "value": "9"
+            },
+            {
+              "label": "APR24",
+              "labelDate": "2024-04-01T00:00:00",
+              "value": "9"
+            }
+          ]
+        },
+        {
+          "employee_name": "Juliette Alison MCKECHNIE",
+          "employee_title": "Project Engineer",
+          "cost_code": null,
+          "percent_allocated": [
+            {
+              "label": "MAR22",
+              "labelDate": "2022-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR22",
+              "labelDate": "2022-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY22",
+              "labelDate": "2022-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN22",
+              "labelDate": "2022-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL22",
+              "labelDate": "2022-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG22",
+              "labelDate": "2022-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP22",
+              "labelDate": "2022-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT22",
+              "labelDate": "2022-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV22",
+              "labelDate": "2022-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC22",
+              "labelDate": "2022-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN23",
+              "labelDate": "2023-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB23",
+              "labelDate": "2023-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR23",
+              "labelDate": "2023-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR23",
+              "labelDate": "2023-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY23",
+              "labelDate": "2023-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN23",
+              "labelDate": "2023-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL23",
+              "labelDate": "2023-07-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "AUG23",
+              "labelDate": "2023-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP23",
+              "labelDate": "2023-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT23",
+              "labelDate": "2023-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV23",
+              "labelDate": "2023-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC23",
+              "labelDate": "2023-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN24",
+              "labelDate": "2024-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB24",
+              "labelDate": "2024-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR24",
+              "labelDate": "2024-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR24",
+              "labelDate": "2024-04-01T00:00:00",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "employee_name": "Mohamad Michael CHOUCAIR",
+          "employee_title": "Contracts Administrator",
+          "cost_code": null,
+          "percent_allocated": [
+            {
+              "label": "MAR22",
+              "labelDate": "2022-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR22",
+              "labelDate": "2022-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY22",
+              "labelDate": "2022-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN22",
+              "labelDate": "2022-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL22",
+              "labelDate": "2022-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG22",
+              "labelDate": "2022-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP22",
+              "labelDate": "2022-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT22",
+              "labelDate": "2022-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV22",
+              "labelDate": "2022-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC22",
+              "labelDate": "2022-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN23",
+              "labelDate": "2023-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB23",
+              "labelDate": "2023-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR23",
+              "labelDate": "2023-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR23",
+              "labelDate": "2023-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY23",
+              "labelDate": "2023-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN23",
+              "labelDate": "2023-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL23",
+              "labelDate": "2023-07-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "AUG23",
+              "labelDate": "2023-08-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "SEP23",
+              "labelDate": "2023-09-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "OCT23",
+              "labelDate": "2023-10-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "NOV23",
+              "labelDate": "2023-11-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "DEC23",
+              "labelDate": "2023-12-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "JAN24",
+              "labelDate": "2024-01-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "FEB24",
+              "labelDate": "2024-02-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "MAR24",
+              "labelDate": "2024-03-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "APR24",
+              "labelDate": "2024-04-01T00:00:00",
+              "value": "47"
+            }
+          ]
+        },
+        {
+          "employee_name": "Jack Chin Pang CHAN",
+          "employee_title": "Commercial Manager",
+          "cost_code": null,
+          "percent_allocated": [
+            {
+              "label": "MAR22",
+              "labelDate": "2022-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR22",
+              "labelDate": "2022-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY22",
+              "labelDate": "2022-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN22",
+              "labelDate": "2022-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL22",
+              "labelDate": "2022-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG22",
+              "labelDate": "2022-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP22",
+              "labelDate": "2022-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT22",
+              "labelDate": "2022-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV22",
+              "labelDate": "2022-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC22",
+              "labelDate": "2022-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN23",
+              "labelDate": "2023-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB23",
+              "labelDate": "2023-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR23",
+              "labelDate": "2023-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR23",
+              "labelDate": "2023-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY23",
+              "labelDate": "2023-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN23",
+              "labelDate": "2023-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL23",
+              "labelDate": "2023-07-01T00:00:00",
+              "value": "9"
+            },
+            {
+              "label": "AUG23",
+              "labelDate": "2023-08-01T00:00:00",
+              "value": "8"
+            },
+            {
+              "label": "SEP23",
+              "labelDate": "2023-09-01T00:00:00",
+              "value": "8"
+            },
+            {
+              "label": "OCT23",
+              "labelDate": "2023-10-01T00:00:00",
+              "value": "8"
+            },
+            {
+              "label": "NOV23",
+              "labelDate": "2023-11-01T00:00:00",
+              "value": "8"
+            },
+            {
+              "label": "DEC23",
+              "labelDate": "2023-12-01T00:00:00",
+              "value": "8"
+            },
+            {
+              "label": "JAN24",
+              "labelDate": "2024-01-01T00:00:00",
+              "value": "8"
+            },
+            {
+              "label": "FEB24",
+              "labelDate": "2024-02-01T00:00:00",
+              "value": "8"
+            },
+            {
+              "label": "MAR24",
+              "labelDate": "2024-03-01T00:00:00",
+              "value": "8"
+            },
+            {
+              "label": "APR24",
+              "labelDate": "2024-04-01T00:00:00",
+              "value": "8"
+            }
+          ]
+        },
+        {
+          "employee_name": "Ali SALEH",
+          "employee_title": "Senior Project Engineer",
+          "cost_code": null,
+          "percent_allocated": [
+            {
+              "label": "MAR22",
+              "labelDate": "2022-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR22",
+              "labelDate": "2022-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY22",
+              "labelDate": "2022-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN22",
+              "labelDate": "2022-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL22",
+              "labelDate": "2022-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG22",
+              "labelDate": "2022-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP22",
+              "labelDate": "2022-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT22",
+              "labelDate": "2022-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV22",
+              "labelDate": "2022-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC22",
+              "labelDate": "2022-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN23",
+              "labelDate": "2023-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB23",
+              "labelDate": "2023-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR23",
+              "labelDate": "2023-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR23",
+              "labelDate": "2023-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY23",
+              "labelDate": "2023-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN23",
+              "labelDate": "2023-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL23",
+              "labelDate": "2023-07-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "AUG23",
+              "labelDate": "2023-08-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "SEP23",
+              "labelDate": "2023-09-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "OCT23",
+              "labelDate": "2023-10-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "NOV23",
+              "labelDate": "2023-11-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "DEC23",
+              "labelDate": "2023-12-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "JAN24",
+              "labelDate": "2024-01-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "FEB24",
+              "labelDate": "2024-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR24",
+              "labelDate": "2024-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR24",
+              "labelDate": "2024-04-01T00:00:00",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "employee_name": "Elyssa Rose ANTOUN",
+          "employee_title": "Cadet",
+          "cost_code": null,
+          "percent_allocated": [
+            {
+              "label": "MAR22",
+              "labelDate": "2022-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR22",
+              "labelDate": "2022-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY22",
+              "labelDate": "2022-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN22",
+              "labelDate": "2022-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL22",
+              "labelDate": "2022-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG22",
+              "labelDate": "2022-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP22",
+              "labelDate": "2022-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT22",
+              "labelDate": "2022-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV22",
+              "labelDate": "2022-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC22",
+              "labelDate": "2022-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN23",
+              "labelDate": "2023-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB23",
+              "labelDate": "2023-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR23",
+              "labelDate": "2023-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR23",
+              "labelDate": "2023-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY23",
+              "labelDate": "2023-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN23",
+              "labelDate": "2023-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL23",
+              "labelDate": "2023-07-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "AUG23",
+              "labelDate": "2023-08-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "SEP23",
+              "labelDate": "2023-09-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "OCT23",
+              "labelDate": "2023-10-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "NOV23",
+              "labelDate": "2023-11-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "DEC23",
+              "labelDate": "2023-12-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "JAN24",
+              "labelDate": "2024-01-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "FEB24",
+              "labelDate": "2024-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR24",
+              "labelDate": "2024-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR24",
+              "labelDate": "2024-04-01T00:00:00",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "employee_name": "Tanya Marie WALSH",
+          "employee_title": "HSE Advisor",
+          "cost_code": null,
+          "percent_allocated": [
+            {
+              "label": "MAR22",
+              "labelDate": "2022-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR22",
+              "labelDate": "2022-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY22",
+              "labelDate": "2022-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN22",
+              "labelDate": "2022-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL22",
+              "labelDate": "2022-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG22",
+              "labelDate": "2022-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP22",
+              "labelDate": "2022-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT22",
+              "labelDate": "2022-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV22",
+              "labelDate": "2022-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC22",
+              "labelDate": "2022-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN23",
+              "labelDate": "2023-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB23",
+              "labelDate": "2023-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR23",
+              "labelDate": "2023-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR23",
+              "labelDate": "2023-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY23",
+              "labelDate": "2023-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN23",
+              "labelDate": "2023-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL23",
+              "labelDate": "2023-07-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "AUG23",
+              "labelDate": "2023-08-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "SEP23",
+              "labelDate": "2023-09-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "OCT23",
+              "labelDate": "2023-10-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "NOV23",
+              "labelDate": "2023-11-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "DEC23",
+              "labelDate": "2023-12-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "JAN24",
+              "labelDate": "2024-01-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "FEB24",
+              "labelDate": "2024-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR24",
+              "labelDate": "2024-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR24",
+              "labelDate": "2024-04-01T00:00:00",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "employee_name": "Matthew Rowcliff",
+          "employee_title": "NSW Carpenter",
+          "cost_code": null,
+          "percent_allocated": [
+            {
+              "label": "MAR22",
+              "labelDate": "2022-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR22",
+              "labelDate": "2022-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY22",
+              "labelDate": "2022-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN22",
+              "labelDate": "2022-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL22",
+              "labelDate": "2022-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG22",
+              "labelDate": "2022-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP22",
+              "labelDate": "2022-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT22",
+              "labelDate": "2022-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV22",
+              "labelDate": "2022-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC22",
+              "labelDate": "2022-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN23",
+              "labelDate": "2023-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB23",
+              "labelDate": "2023-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR23",
+              "labelDate": "2023-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR23",
+              "labelDate": "2023-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY23",
+              "labelDate": "2023-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN23",
+              "labelDate": "2023-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL23",
+              "labelDate": "2023-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG23",
+              "labelDate": "2023-08-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "SEP23",
+              "labelDate": "2023-09-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "OCT23",
+              "labelDate": "2023-10-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "NOV23",
+              "labelDate": "2023-11-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "DEC23",
+              "labelDate": "2023-12-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "JAN24",
+              "labelDate": "2024-01-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "FEB24",
+              "labelDate": "2024-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR24",
+              "labelDate": "2024-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR24",
+              "labelDate": "2024-04-01T00:00:00",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "employee_name": "Abdul Kaddour",
+          "employee_title": "NSW Labourer",
+          "cost_code": null,
+          "percent_allocated": [
+            {
+              "label": "MAR22",
+              "labelDate": "2022-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR22",
+              "labelDate": "2022-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY22",
+              "labelDate": "2022-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN22",
+              "labelDate": "2022-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL22",
+              "labelDate": "2022-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG22",
+              "labelDate": "2022-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP22",
+              "labelDate": "2022-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT22",
+              "labelDate": "2022-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV22",
+              "labelDate": "2022-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC22",
+              "labelDate": "2022-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN23",
+              "labelDate": "2023-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB23",
+              "labelDate": "2023-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR23",
+              "labelDate": "2023-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR23",
+              "labelDate": "2023-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY23",
+              "labelDate": "2023-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN23",
+              "labelDate": "2023-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL23",
+              "labelDate": "2023-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG23",
+              "labelDate": "2023-08-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "SEP23",
+              "labelDate": "2023-09-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "OCT23",
+              "labelDate": "2023-10-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "NOV23",
+              "labelDate": "2023-11-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "DEC23",
+              "labelDate": "2023-12-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "JAN24",
+              "labelDate": "2024-01-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "FEB24",
+              "labelDate": "2024-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR24",
+              "labelDate": "2024-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR24",
+              "labelDate": "2024-04-01T00:00:00",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "employee_name": "Samuel Begbie",
+          "employee_title": "NSW Carpenter",
+          "cost_code": null,
+          "percent_allocated": [
+            {
+              "label": "MAR22",
+              "labelDate": "2022-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR22",
+              "labelDate": "2022-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY22",
+              "labelDate": "2022-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN22",
+              "labelDate": "2022-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL22",
+              "labelDate": "2022-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG22",
+              "labelDate": "2022-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP22",
+              "labelDate": "2022-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT22",
+              "labelDate": "2022-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV22",
+              "labelDate": "2022-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC22",
+              "labelDate": "2022-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN23",
+              "labelDate": "2023-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB23",
+              "labelDate": "2023-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR23",
+              "labelDate": "2023-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR23",
+              "labelDate": "2023-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY23",
+              "labelDate": "2023-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN23",
+              "labelDate": "2023-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL23",
+              "labelDate": "2023-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG23",
+              "labelDate": "2023-08-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "SEP23",
+              "labelDate": "2023-09-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "OCT23",
+              "labelDate": "2023-10-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "NOV23",
+              "labelDate": "2023-11-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "DEC23",
+              "labelDate": "2023-12-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "JAN24",
+              "labelDate": "2024-01-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "FEB24",
+              "labelDate": "2024-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR24",
+              "labelDate": "2024-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR24",
+              "labelDate": "2024-04-01T00:00:00",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "employee_name": "Hang Nghiem",
+          "employee_title": "Senior Design Manager",
+          "cost_code": null,
+          "percent_allocated": [
+            {
+              "label": "MAR22",
+              "labelDate": "2022-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR22",
+              "labelDate": "2022-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY22",
+              "labelDate": "2022-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN22",
+              "labelDate": "2022-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL22",
+              "labelDate": "2022-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG22",
+              "labelDate": "2022-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP22",
+              "labelDate": "2022-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT22",
+              "labelDate": "2022-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV22",
+              "labelDate": "2022-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC22",
+              "labelDate": "2022-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN23",
+              "labelDate": "2023-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB23",
+              "labelDate": "2023-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR23",
+              "labelDate": "2023-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR23",
+              "labelDate": "2023-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY23",
+              "labelDate": "2023-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN23",
+              "labelDate": "2023-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL23",
+              "labelDate": "2023-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG23",
+              "labelDate": "2023-08-01T00:00:00",
+              "value": "30"
+            },
+            {
+              "label": "SEP23",
+              "labelDate": "2023-09-01T00:00:00",
+              "value": "9"
+            },
+            {
+              "label": "OCT23",
+              "labelDate": "2023-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV23",
+              "labelDate": "2023-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC23",
+              "labelDate": "2023-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN24",
+              "labelDate": "2024-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB24",
+              "labelDate": "2024-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR24",
+              "labelDate": "2024-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR24",
+              "labelDate": "2024-04-01T00:00:00",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "employee_name": "Brock Rowcliff",
+          "employee_title": "1st Year Apprentice",
+          "cost_code": null,
+          "percent_allocated": [
+            {
+              "label": "MAR22",
+              "labelDate": "2022-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR22",
+              "labelDate": "2022-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY22",
+              "labelDate": "2022-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN22",
+              "labelDate": "2022-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL22",
+              "labelDate": "2022-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG22",
+              "labelDate": "2022-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP22",
+              "labelDate": "2022-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT22",
+              "labelDate": "2022-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV22",
+              "labelDate": "2022-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC22",
+              "labelDate": "2022-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN23",
+              "labelDate": "2023-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB23",
+              "labelDate": "2023-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR23",
+              "labelDate": "2023-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR23",
+              "labelDate": "2023-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY23",
+              "labelDate": "2023-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN23",
+              "labelDate": "2023-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL23",
+              "labelDate": "2023-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG23",
+              "labelDate": "2023-08-01T00:00:00",
+              "value": "65"
+            },
+            {
+              "label": "SEP23",
+              "labelDate": "2023-09-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "OCT23",
+              "labelDate": "2023-10-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "NOV23",
+              "labelDate": "2023-11-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "DEC23",
+              "labelDate": "2023-12-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "JAN24",
+              "labelDate": "2024-01-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "FEB24",
+              "labelDate": "2024-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR24",
+              "labelDate": "2024-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR24",
+              "labelDate": "2024-04-01T00:00:00",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "employee_name": "Greg Ellevsen",
+          "employee_title": "Quality Assurance Manager",
+          "cost_code": null,
+          "percent_allocated": [
+            {
+              "label": "MAR22",
+              "labelDate": "2022-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR22",
+              "labelDate": "2022-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY22",
+              "labelDate": "2022-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN22",
+              "labelDate": "2022-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL22",
+              "labelDate": "2022-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG22",
+              "labelDate": "2022-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP22",
+              "labelDate": "2022-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT22",
+              "labelDate": "2022-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV22",
+              "labelDate": "2022-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC22",
+              "labelDate": "2022-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN23",
+              "labelDate": "2023-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB23",
+              "labelDate": "2023-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR23",
+              "labelDate": "2023-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR23",
+              "labelDate": "2023-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY23",
+              "labelDate": "2023-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN23",
+              "labelDate": "2023-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL23",
+              "labelDate": "2023-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG23",
+              "labelDate": "2023-08-01T00:00:00",
+              "value": "5"
+            },
+            {
+              "label": "SEP23",
+              "labelDate": "2023-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT23",
+              "labelDate": "2023-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV23",
+              "labelDate": "2023-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC23",
+              "labelDate": "2023-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN24",
+              "labelDate": "2024-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB24",
+              "labelDate": "2024-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR24",
+              "labelDate": "2024-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR24",
+              "labelDate": "2024-04-01T00:00:00",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "employee_name": "Foreman",
+          "employee_title": "Foreman",
+          "cost_code": null,
+          "percent_allocated": [
+            {
+              "label": "MAR22",
+              "labelDate": "2022-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR22",
+              "labelDate": "2022-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY22",
+              "labelDate": "2022-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN22",
+              "labelDate": "2022-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL22",
+              "labelDate": "2022-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG22",
+              "labelDate": "2022-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP22",
+              "labelDate": "2022-09-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "OCT22",
+              "labelDate": "2022-10-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "NOV22",
+              "labelDate": "2022-11-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "DEC22",
+              "labelDate": "2022-12-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JAN23",
+              "labelDate": "2023-01-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "FEB23",
+              "labelDate": "2023-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR23",
+              "labelDate": "2023-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR23",
+              "labelDate": "2023-04-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAY23",
+              "labelDate": "2023-05-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUN23",
+              "labelDate": "2023-06-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "JUL23",
+              "labelDate": "2023-07-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "AUG23",
+              "labelDate": "2023-08-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "SEP23",
+              "labelDate": "2023-09-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "OCT23",
+              "labelDate": "2023-10-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "NOV23",
+              "labelDate": "2023-11-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "DEC23",
+              "labelDate": "2023-12-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "JAN24",
+              "labelDate": "2024-01-01T00:00:00",
+              "value": "100"
+            },
+            {
+              "label": "FEB24",
+              "labelDate": "2024-02-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "MAR24",
+              "labelDate": "2024-03-01T00:00:00",
+              "value": "0"
+            },
+            {
+              "label": "APR24",
+              "labelDate": "2024-04-01T00:00:00",
+              "value": "100"
+            }
+          ]
+        }
+      ],
+      "periodLists": [
+        {
+          "label": "MAR22",
+          "labelDate": "2022-03-01T00:00:00",
+          "value": "3 2022"
+        },
+        {
+          "label": "APR22",
+          "labelDate": "2022-04-01T00:00:00",
+          "value": "4 2022"
+        },
+        {
+          "label": "MAY22",
+          "labelDate": "2022-05-01T00:00:00",
+          "value": "5 2022"
+        },
+        {
+          "label": "JUN22",
+          "labelDate": "2022-06-01T00:00:00",
+          "value": "6 2022"
+        },
+        {
+          "label": "JUL22",
+          "labelDate": "2022-07-01T00:00:00",
+          "value": "7 2022"
+        },
+        {
+          "label": "AUG22",
+          "labelDate": "2022-08-01T00:00:00",
+          "value": "8 2022"
+        },
+        {
+          "label": "SEP22",
+          "labelDate": "2022-09-01T00:00:00",
+          "value": "9 2022"
+        },
+        {
+          "label": "OCT22",
+          "labelDate": "2022-10-01T00:00:00",
+          "value": "10 2022"
+        },
+        {
+          "label": "NOV22",
+          "labelDate": "2022-11-01T00:00:00",
+          "value": "11 2022"
+        },
+        {
+          "label": "DEC22",
+          "labelDate": "2022-12-01T00:00:00",
+          "value": "12 2022"
+        },
+        {
+          "label": "JAN23",
+          "labelDate": "2023-01-01T00:00:00",
+          "value": "1 2023"
+        },
+        {
+          "label": "FEB23",
+          "labelDate": "2023-02-01T00:00:00",
+          "value": "2 2023"
+        },
+        {
+          "label": "MAR23",
+          "labelDate": "2023-03-01T00:00:00",
+          "value": "3 2023"
+        },
+        {
+          "label": "APR23",
+          "labelDate": "2023-04-01T00:00:00",
+          "value": "4 2023"
+        },
+        {
+          "label": "MAY23",
+          "labelDate": "2023-05-01T00:00:00",
+          "value": "5 2023"
+        },
+        {
+          "label": "JUN23",
+          "labelDate": "2023-06-01T00:00:00",
+          "value": "6 2023"
+        },
+        {
+          "label": "JUL23",
+          "labelDate": "2023-07-01T00:00:00",
+          "value": "7 2023"
+        },
+        {
+          "label": "AUG23",
+          "labelDate": "2023-08-01T00:00:00",
+          "value": "8 2023"
+        },
+        {
+          "label": "SEP23",
+          "labelDate": "2023-09-01T00:00:00",
+          "value": "9 2023"
+        },
+        {
+          "label": "OCT23",
+          "labelDate": "2023-10-01T00:00:00",
+          "value": "10 2023"
+        },
+        {
+          "label": "NOV23",
+          "labelDate": "2023-11-01T00:00:00",
+          "value": "11 2023"
+        },
+        {
+          "label": "DEC23",
+          "labelDate": "2023-12-01T00:00:00",
+          "value": "12 2023"
+        },
+        {
+          "label": "JAN24",
+          "labelDate": "2024-01-01T00:00:00",
+          "value": "1 2024"
+        },
+        {
+          "label": "FEB24",
+          "labelDate": "2024-02-01T00:00:00",
+          "value": "2 2024"
+        },
+        {
+          "label": "MAR24",
+          "labelDate": "2024-03-01T00:00:00",
+          "value": "3 2024"
+        },
+        {
+          "label": "APR24",
+          "labelDate": "2024-04-01T00:00:00",
+          "value": "4 2024"
+        }
+      ],
+      "currentMonth": "AUG23",
+      "staffGridMonths": [
+        {
+          "jobId": "3572",
+          "period": "MAR22",
+          "periodDate": "2022-03-01T00:00:00",
+          "forecastStaffCost": 58948.08,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "APR22",
+          "periodDate": "2022-04-01T00:00:00",
+          "forecastStaffCost": 53031.84,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "MAY22",
+          "periodDate": "2022-05-01T00:00:00",
+          "forecastStaffCost": 106137.7,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "JUN22",
+          "periodDate": "2022-06-01T00:00:00",
+          "forecastStaffCost": 120027.76,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "JUL22",
+          "periodDate": "2022-07-01T00:00:00",
+          "forecastStaffCost": 124563.63,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "AUG22",
+          "periodDate": "2022-08-01T00:00:00",
+          "forecastStaffCost": 45645.24,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "SEP22",
+          "periodDate": "2022-09-01T00:00:00",
+          "forecastStaffCost": 44531.69,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "OCT22",
+          "periodDate": "2022-10-01T00:00:00",
+          "forecastStaffCost": 76859.92,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "NOV22",
+          "periodDate": "2022-11-01T00:00:00",
+          "forecastStaffCost": 74820.13,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "DEC22",
+          "periodDate": "2022-12-01T00:00:00",
+          "forecastStaffCost": 34723.2,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "JAN23",
+          "periodDate": "2023-01-01T00:00:00",
+          "forecastStaffCost": 130858.81,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "FEB23",
+          "periodDate": "2023-02-01T00:00:00",
+          "forecastStaffCost": 278308.2,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "MAR23",
+          "periodDate": "2023-03-01T00:00:00",
+          "forecastStaffCost": 238909.11,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "APR23",
+          "periodDate": "2023-04-01T00:00:00",
+          "forecastStaffCost": 212598.03,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "MAY23",
+          "periodDate": "2023-05-01T00:00:00",
+          "forecastStaffCost": 219941.8,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "JUN23",
+          "periodDate": "2023-06-01T00:00:00",
+          "forecastStaffCost": 208933.15,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "JUL23",
+          "periodDate": "2023-07-01T00:00:00",
+          "forecastStaffCost": 229355.01,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "AUG23",
+          "periodDate": "2023-08-01T00:00:00",
+          "forecastStaffCost": 233199.0433,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "SEP23",
+          "periodDate": "2023-09-01T00:00:00",
+          "forecastStaffCost": 249936.7622,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "OCT23",
+          "periodDate": "2023-10-01T00:00:00",
+          "forecastStaffCost": 247323.7603,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "NOV23",
+          "periodDate": "2023-11-01T00:00:00",
+          "forecastStaffCost": 247323.7603,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "DEC23",
+          "periodDate": "2023-12-01T00:00:00",
+          "forecastStaffCost": 247323.7603,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "JAN24",
+          "periodDate": "2024-01-01T00:00:00",
+          "forecastStaffCost": 247323.7603,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "FEB24",
+          "periodDate": "2024-02-01T00:00:00",
+          "forecastStaffCost": 56013.3695,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "MAR24",
+          "periodDate": "2024-03-01T00:00:00",
+          "forecastStaffCost": 29335.4416,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        },
+        {
+          "jobId": "3572",
+          "period": "APR24",
+          "periodDate": "2024-04-01T00:00:00",
+          "forecastStaffCost": 35516.6619,
+          "forecastGraphCost": null,
+          "originalBudget": 135927.46153846153,
+          "currentBudget": 140887.6653846154
+        }
+      ],
+      "staffJobpacLists": [
+        {
+          "forecastStaffCost": 4533227.3,
+          "originalBudget": 3534114,
+          "currentBudget": 3663079.3
+        }
+      ],
+      "bridgitRefresh": {
+        "id": 1,
+        "requestBy": "Gareth Lamb",
+        "requestDate": "2023-07-27T00:05:43.01",
+        "responseDate": "2023-07-27T00:07:03.017"
+      },
+      "periodFlag": -1,
+      "forecastCalculation": 0
+    }
+  },
+  "resultList": null
+}

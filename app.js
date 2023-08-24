@@ -1,62 +1,49 @@
 const express = require("express");
 const puppeteer = require("puppeteer");
 const fs = require("fs/promises");
-const cors = require('cors');
+const cors = require("cors");
+const data = require("/mock/GraphGet.json");
 
 const app = express();
 const port = 3002;
 
 app.use(cors());
 
-app.get("/getMockData", async (req,res)=>{
-    try {
-
-        let data = [{
-            "year": "2021",
-            "europe": 2.5,
-            "namerica": 2.5,
-            "asia": 2.1,
-            "lamerica": 1,
-            "meast": 0.8,
-            "africa": 0.4
-          }, {
-            "year": "2022",
-            "europe": 2.6,
-            "namerica": 2.7,
-            "asia": 2.2,
-            "lamerica": 0.5,
-            "meast": 0.4,
-            "africa": 0.3
-          }, {
-            "year": "2023",
-            "europe": 2.8,
-            "namerica": 2.9,
-            "asia": 2.4,
-            "lamerica": 0.3,
-            "meast": 0.9,
-            "africa": 0.5
-          }]
-
-        res.status(200).send(data);
-        
-    } catch (error) {
-        console.error("Error:", error);
+app.post("/GraphGet", async (req, res) => {
+  try {
+    res.status(200).send(data);
+  } catch (error) {
+    console.error("Error:", error);
     res.status(500).send("Internal Server Error");
-    }
-})
+  }
+});
 
 app.get("/convertHtmlToImg", async (req, res) => {
   try {
     const browser = await puppeteer.launch({
-        headless:true
+      headless: true,
     });
     const page = await browser.newPage();
 
     // Set viewport width and height
     await page.setViewport({ width: 1280, height: 720 });
 
+    const type = req.body.type;
+
+    async function findTemplate() {
+      switch (type) {
+        case "average":
+          return await fs.readFile("/templates/average.html", {
+            encoding: "utf8",
+          });
+
+        default:
+          return await fs.readFile("index.html", { encoding: "utf8" });
+      }
+    }
+
     // Read the HTML content from the input HTML file
-    const htmlContent = await fs.readFile("index.html", { encoding: "utf8" });
+    const htmlContent = findTemplate();
 
     await page.setContent(htmlContent);
 
@@ -75,7 +62,7 @@ app.get("/convertHtmlToImg", async (req, res) => {
 
     await browser.close();
 
-    res.set('Content-Type', 'image/png');
+    res.set("Content-Type", "image/png");
     // res.send(imageBuffer);
     res.status(200).send(imageBuffer);
   } catch (error) {

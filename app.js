@@ -2,12 +2,18 @@ const express = require("express");
 const puppeteer = require("puppeteer");
 const fs = require("fs/promises");
 const cors = require("cors");
-const data = require("/mock/GraphGet.json");
+const bodyParser = require("body-parser");
+
+// mock
+const data = require("./mock/GraphGet.json");
 
 const app = express();
 const port = 3002;
 
 app.use(cors());
+
+// Parse application/json
+app.use(bodyParser.json());
 
 app.post("/GraphGet", async (req, res) => {
   try {
@@ -18,7 +24,7 @@ app.post("/GraphGet", async (req, res) => {
   }
 });
 
-app.get("/convertHtmlToImg", async (req, res) => {
+app.post("/convertHtmlToImg", async (req, res) => {
   try {
     const browser = await puppeteer.launch({
       headless: true,
@@ -28,12 +34,12 @@ app.get("/convertHtmlToImg", async (req, res) => {
     // Set viewport width and height
     await page.setViewport({ width: 1280, height: 720 });
 
-    const type = req.body.type;
+    let type = req.body.type;
 
     async function findTemplate() {
       switch (type) {
         case "average":
-          return await fs.readFile("/templates/average.html", {
+          return await fs.readFile("./templates/average.html", {
             encoding: "utf8",
           });
 

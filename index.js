@@ -42,7 +42,7 @@ app.post("/GraphGet", async (req, res) => {
 
 app.get("/convertTest", async (req,res)=>{
   try{
-    const browser = await puppeteer.launch({ headless: true, args:[ '--no-sandbox', '--disable-setuid-sandbox']});
+    const browser = await puppeteer.launch({ headless: "new", args:[ '--no-sandbox', '--disable-setuid-sandbox']});
     // const browser = await puppeteer.connect({ browserWSEndpoint: 'wss://chrome.browserless.io/' });
     const page = await browser.newPage();
 

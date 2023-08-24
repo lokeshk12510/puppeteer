@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PDF Generation</title>
-    <style>
-      #areaChart {
-        width: 100%;
-        height: 400px;
-        max-width: 100%;
-      }
-    </style>
+    <title>ADCO</title>
   </head>
   <body>
     <table class="table-colored mt-15" width="100%">
@@ -17,7 +10,10 @@
       </tr>
       <tr>
         <td>
-          <div id="areaChart"></div>
+          <div
+            style="width: 100%; height: 400px; max-width: 100%"
+            id="areaChart"
+          ></div>
         </td>
       </tr>
     </table>
@@ -34,16 +30,12 @@
           value: item.value ?? 0,
         }));
 
-        console.log(data);
-
         am5.ready(function () {
-          console.log();
-
           let root = am5.Root.new("areaChart");
 
           let myTheme = am5.Theme.new(root);
           root.setThemes([am5themes_Animated.new(root), myTheme]);
-          myTheme.rule("ColorSet").set("colors", [am5.color("#B1D489")]);
+          // myTheme.rule("ColorSet").set("colors", [am5.color("red")]);
 
           let chart = root.container.children.push(
             am5xy.XYChart.new(root, {

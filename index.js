@@ -22,7 +22,16 @@ app.get("/", (req, res) => {
   res.send("Hello, World!");
 });
 
-app.get("/GraphGet", async (req, res) => {
+app.get("/GraphGetTest", async (req, res) => {
+  try {
+    res.status(200).send(data);
+  } catch (error) {
+    console.error("Error:", error);
+    res.status(500).send("Internal Server Error");
+  }
+});
+
+app.post("/GraphGet", async (req, res) => {
   try {
     res.status(200).send(data);
   } catch (error) {

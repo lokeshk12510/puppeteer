@@ -27,7 +27,7 @@ app.post("/GraphGet", async (req, res) => {
 app.post("/convertHtmlToImg", async (req, res) => {
   try {
     const browser = await puppeteer.launch({
-      headless: false,
+      headless: true,
     });
     const page = await browser.newPage();
 
@@ -66,7 +66,7 @@ app.post("/convertHtmlToImg", async (req, res) => {
       fullPage: true,
     });
 
-    // await browser.close();
+    await browser.close();
 
     res.set("Content-Type", "image/png");
     // res.send(imageBuffer);

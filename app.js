@@ -15,6 +15,11 @@ app.use(cors());
 // Parse application/json
 app.use(bodyParser.json());
 
+// Define routes
+app.get("/", (req, res) => {
+  res.send("Hello, World!");
+});
+
 app.post("/GraphGet", async (req, res) => {
   try {
     res.status(200).send(data);

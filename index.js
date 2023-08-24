@@ -1,7 +1,17 @@
 const express = require("express");
-const app = express();
+const bodyParser = require("body-parser");
+const fs = require("fs/promises");
+const cors = require("cors");
+
 // mock
 const data = require("./mock/GraphGet.json");
+
+const app = express();
+
+app.use(cors());
+
+// Parse application/json
+app.use(bodyParser.json());
 
 // Custom initialization logic before starting the server
 console.log("Initializing...");

@@ -42,9 +42,7 @@ app.post("/GraphGet", async (req, res) => {
 
 app.get("/convertTest", async (req,res)=>{
   try{
-    const browser = await puppeteer.launch({
-      headless: true,
-    });
+    const browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox'] });
     const page = await browser.newPage();
 
     // Set viewport width and height

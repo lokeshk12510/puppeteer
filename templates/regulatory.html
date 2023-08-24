@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ADCO</title>
+  </head>
+  <body>
+    <table class="table-colored mt-15" width="100%">
+      <tr>
+        <th>Regulatory Notice</th>
+      </tr>
+      <tr>
+        <td>
+          <div
+            style="width: 100%; height: 400px; max-width: 100%"
+            id="regulatory-chart"
+          ></div>
+        </td>
+      </tr>
+    </table>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+    <script>
+      let apiUrl = "http://localhost:3002/GraphGet";
+
+      function plotChart(data) {
+        let root3 = am5.Root.new("regulatory-chart");
+
+        let stackList = [
+          {
+            label: "Last Month",
+            key: "last",
+          },
+          {
+            label: "This Month",
+            key: "this",
+          },
+          {
+            label: "To Period",
+            key: "toPeriod",
+          },
+        ];
+
+        let regulatoryData = [
+          {
+            label: "Prohibition Notice",
+            last: data.prohibition_Last ?? 0,
+            this: data.prohibition_This ?? 0,
+            toPeriod: data.prohibition_toPeriod ?? 0,
+          },
+          {
+            label: "Improvement Notice",
+            last: data.improvement_Last ?? 0,
+            this: data.improvement_This ?? 0,
+            toPeriod: data.improvement_toPeriod ?? 0,
+          },
+          {
+            label: "Infringement Notice",
+            last: data.infringement_Last ?? 0,
+            this: data.infringement_This ?? 0,
+            toPeriod: data.infringement_toPeriod ?? 0,
+          },
+          {
+            label: "Environment Notice",
+            last: data.environmental_Last ?? 0,
+            this: data.environmental_This ?? 0,
+            toPeriod: data.environmental_toPeriod ?? 0,
+          },
+          {
+            label: "Fine or Penalties",
+            last: data.fines_Last ?? 0,
+            this: data.fines_This ?? 0,
+            toPeriod: data.fines_ToPeriod ?? 0,
+          },
+          {
+            label: "Other Sanctions",
+            last: data.sanctionOther_Last ?? 0,
+            this: data.sanctionOther_This ?? 0,
+            toPeriod: data.sanctionOther_ToDate ?? 0,
+          },
+        ];
+
+        root3.setThemes([am5themes_Animated.new(root3)]);
+
+        let chart3 = root3.container.children.push(
+          am5xy.XYChart.new(root3, {
+            panX: false,
+            panY: false,
+            layout: root3.verticalLayout,
+          })
+        );
+
+        let xRenderer3 = am5xy.AxisRendererX.new(root3, {
+          minGridDistance: 10,
+        });
+        let xAxis3 = chart3.xAxes.push(
+          am5xy.CategoryAxis.new(root3, {
+            categoryField: "label",
+            renderer: xRenderer3,
+            tooltip: am5.Tooltip.new(root3, {}),
+          })
+        );
+
+        xAxis3.get("renderer").labels.template.setAll({
+          fontSize: 12,
+          oversizedBehavior: "wrap",
+          maxWidth: 100,
+          textAlign: "center",
+        });
+
+        xRenderer3.grid.template.setAll({
+          location: 1,
+        });
+
+        xAxis3.data.setAll(regulatoryData);
+
+        let yAxis3 = chart3.yAxes.push(
+          am5xy.ValueAxis.new(root3, {
+            min: 0,
+            renderer: am5xy.AxisRendererY.new(root3, {
+              strokeOpacity: 0.1,
+            }),
+          })
+        );
+
+        let legend3 = chart3.children.push(
+          am5.Legend.new(root3, {
+            centerX: am5.p50,
+            x: am5.p50,
+          })
+        );
+
+        function makeSeries(name, fieldName) {
+          let series3 = chart3.series.push(
+            am5xy.ColumnSeries.new(root3, {
+              name: name,
+              stacked: true,
+              xAxis: xAxis3,
+              yAxis: yAxis3,
+              valueYField: fieldName,
+              categoryXField: "label",
+            })
+          );
+
+          series3.columns.template.setAll({
+            tooltipText: "{name}, {categoryX}: {valueY}",
+            tooltipY: am5.percent(10),
+          });
+          series3.data.setAll(regulatoryData);
+
+          // Make stuff animate on load
+          series3.appear();
+
+          series3.bullets.push(function () {
+            return am5.Bullet.new(root3, {
+              sprite: am5.Label.new(root3, {
+                text: "{valueY}",
+                fill: root3.interfaceColors.get("alternativeText"),
+                centerY: am5.p0,
+                centerX: am5.p50,
+                populateText: true,
+              }),
+            });
+          });
+
+          legend3.data.push(series3);
+        }
+
+        stackList.forEach((element) => {
+          makeSeries(element.label, element.key);
+        });
+
+        chart3.appear(1000, 100);
+      }
+
+      function makeAPICallWithPayload(url, method, payload, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.open(method, url, true);
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        xhr.onload = function () {
+          if (xhr.status >= 200 && xhr.status < 300) {
+            callback(null, xhr.responseText);
+          } else {
+            callback("Error: " + xhr.status);
+          }
+        };
+
+        xhr.onerror = function () {
+          callback("Network error");
+        };
+
+        xhr.send(JSON.stringify(payload));
+      }
+
+      let postData = {
+        jobId: "3572",
+        period: "JUL23",
+        projectId: "1753",
+      };
+
+      makeAPICallWithPayload(
+        apiUrl,
+        "POST",
+        postData,
+        function (error, response) {
+          if (error) {
+            console.error("Error:", error);
+          } else {
+            let data = JSON.parse(response);
+            plotChart(data.result.hseOverall.hseRegulatoryNotices);
+          }
+        }
+      );
+    </script>
+  </body>
+</html>

@@ -42,6 +42,10 @@ app.post("/convertHtmlToImg", async (req, res) => {
           return await fs.readFile("./templates/average.html", {
             encoding: "utf8",
           });
+        case "regulatory":
+          return await fs.readFile("./templates/regulatory.html", {
+            encoding: "utf8",
+          });
 
         default:
           return await fs.readFile("index.html", { encoding: "utf8" });

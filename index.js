@@ -68,7 +68,7 @@ app.get("/convertTest", async (req,res)=>{
     res.status(200).send(imageBuffer);
   }catch (error){
     console.error("Error:", error);
-    res.status(500).send("Internal Server Error");
+    res.status(500).send({message:"Internal Server Error", error});
   }
 })
 

@@ -42,7 +42,16 @@ app.post("/GraphGet", async (req, res) => {
 
 app.get("/convertTest", async (req,res)=>{
   try{
-    const browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox'] });
+    const browser = await puppeteer.launch({ headless: true, args:[
+      '--disable-gpu',
+      '--disable-dev-shm-usage',
+      '--disable-setuid-sandbox',
+      '--no-first-run',
+      '--no-sandbox',
+      '--no-zygote',
+      '--single-process',
+    ] });
+    // const browser = await puppeteer.connect({ browserWSEndpoint: 'wss://chrome.browserless.io/' });
     const page = await browser.newPage();
 
     // Set viewport width and height
@@ -59,7 +68,7 @@ app.get("/convertTest", async (req,res)=>{
       fullPage: true,
     });
 
-    await browser.close();
+    // await browser.close();
 
     res.set("Content-Type", "image/png");
     // res.send(imageBuffer);

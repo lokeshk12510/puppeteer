@@ -22,7 +22,7 @@
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
 
     <script>
-      let apiUrl = "http://localhost:3002/GraphGet";
+      let apiUrl = "http://localhost:3002/GraphGetTest";
 
       function average(averageWorkersData) {
         let data = averageWorkersData.map((item) => ({
@@ -118,7 +118,7 @@
         });
       }
 
-      function makeAPICallWithPayload(url, method, payload, callback) {
+      function makeAPICallWithPayload(url, method, callback) {
         let xhr = new XMLHttpRequest();
         xhr.open(method, url, true);
         xhr.setRequestHeader("Content-Type", "application/json");
@@ -135,7 +135,7 @@
           callback("Network error");
         };
 
-        xhr.send(JSON.stringify(payload));
+        xhr.send();
       }
 
       let postData = {
@@ -146,8 +146,7 @@
 
       makeAPICallWithPayload(
         apiUrl,
-        "POST",
-        postData,
+        "GET",
         function (error, response) {
           if (error) {
             console.error("Error:", error);

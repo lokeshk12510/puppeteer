@@ -40,7 +40,7 @@ app.post("/GraphGet", async (req, res) => {
   }
 });
 
-app.post("/convertHtmlToImg", async (req, res) => {
+app.get("/convertHtmlToImg", async (req, res) => {
   try {
     const browser = await puppeteer.launch({
       headless: true,
@@ -48,9 +48,9 @@ app.post("/convertHtmlToImg", async (req, res) => {
     const page = await browser.newPage();
 
     // Set viewport width and height
-    await page.setViewport({ width: 1280, height: 720 });
+    await page.setViewport({ width: 1280, height: 720 })
 
-    let type = req.body.type;
+    let type = "average"
 
     async function findTemplate() {
       switch (type) {

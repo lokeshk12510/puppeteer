@@ -45,8 +45,8 @@ app.get("/convertTest", async (req, res) => {
     const browser = await puppeteer.launch({
       headless: true,
       executablePath:
-        "/c/home/site/wwwroot/.cache/puppeteer/chrome/win32-116.0.5845.96/chrome-win32",
-      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+        "/c/home/site/wwwroot/.cache/puppeteer/chrome/win32-116.0.5845.96/chrome-win32/chrome.exe",
+      args: ["--no-sandbox", "--disable-setuid-sandbox", "--enable-gpu"],
       ignoreDefaultArgs: ["--disable-extensions"],
     });
     // const browser = await puppeteer.connect({ browserWSEndpoint: 'wss://chrome.browserless.io/' });

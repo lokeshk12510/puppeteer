@@ -40,17 +40,22 @@ app.post("/GraphGet", async (req, res) => {
   }
 });
 
-app.get("/convertTest", async (req,res)=>{
-  try{
-    const browser = await puppeteer.launch({ headless: "new", args:[ '--no-sandbox', '--disable-setuid-sandbox']});
+app.get("/convertTest", async (req, res) => {
+  try {
+    const browser = await puppeteer.launch({
+      headless: "new",
+      executablePath:
+        "/c/home/site/wwwroot/.cache/puppeteer/chrome/win32-116.0.5845.96/chrome-win32",
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    });
     // const browser = await puppeteer.connect({ browserWSEndpoint: 'wss://chrome.browserless.io/' });
     const page = await browser.newPage();
 
     // Set viewport width and height
-    await page.setViewport({ width: 1280, height: 720 })
+    await page.setViewport({ width: 1280, height: 720 });
 
-     // Navigate to a data URL with the HTML content
-     await page.goto("https://www.intergy.com.au/", {
+    // Navigate to a data URL with the HTML content
+    await page.goto("https://www.intergy.com.au/", {
       waitUntil: "networkidle0",
     });
 
@@ -65,11 +70,11 @@ app.get("/convertTest", async (req,res)=>{
     res.set("Content-Type", "image/png");
     // res.send(imageBuffer);
     res.status(200).send(imageBuffer);
-  }catch (error){
+  } catch (error) {
     console.error("Error:", error);
-    res.status(500).send({message:"Internal Server Error", error});
+    res.status(500).send({ message: "Internal Server Error", error });
   }
-})
+});
 
 app.get("/convertHtmlToImg", async (req, res) => {
   try {
@@ -79,9 +84,9 @@ app.get("/convertHtmlToImg", async (req, res) => {
     const page = await browser.newPage();
 
     // Set viewport width and height
-    await page.setViewport({ width: 1280, height: 720 })
+    await page.setViewport({ width: 1280, height: 720 });
 
-    let type = "average"
+    let type = "average";
 
     async function findTemplate() {
       switch (type) {

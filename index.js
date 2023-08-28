@@ -47,6 +47,7 @@ app.get("/convertTest", async (req, res) => {
       executablePath:
         "/c/home/site/wwwroot/.cache/puppeteer/chrome/win32-116.0.5845.96/chrome-win32",
       args: ["--no-sandbox", "--disable-setuid-sandbox"],
+      ignoreDefaultArgs: ["--disable-extensions"],
     });
     // const browser = await puppeteer.connect({ browserWSEndpoint: 'wss://chrome.browserless.io/' });
     const page = await browser.newPage();

@@ -39,6 +39,7 @@ app.get("/testpdf", (req, res) => {
 });
 
 app.get("/wktest", (req, res) => {
+  wkhtmltopdf.command = "C:/Program Files/wkhtmltopdf/bin/wkhtmltopdf.exe";
   const pdfStream = wkhtmltopdf("https://www.intergy.com.au/");
   res.setHeader("Content-Type", "application/pdf");
   pdfStream.pipe(res);
@@ -57,7 +58,7 @@ app.get("/generate", async (req, res) => {
       return res.status(500).send("Error reading template file.");
     }
 
-    wkhtmltopdf.command = "c:/wkhtmltopdf/bin/wkhtmltopdf.exe";
+    wkhtmltopdf.command = "C:/Program Files/wkhtmltopdf/bin/wkhtmltopdf.exe";
 
     // Generate PDF from the HTML template
     const pdfStream = wkhtmltopdf(htmlContent, { pageSize: "letter" });

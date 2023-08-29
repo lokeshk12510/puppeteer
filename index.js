@@ -1,11 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const puppeteer = require("puppeteer");
-const fs = require("fs/promises");
 const cors = require("cors");
-
-// mock
-const data = require("./mock/GraphGet.json");
+const wkhtmltopdf = require("wkhtmltopdf");
+const path = require("path");
+const fs = require("fs/promises");
+const { exec } = require("child_process");
 
 const app = express();
 
@@ -22,116 +21,66 @@ app.get("/", (req, res) => {
   res.send("Hello, World!");
 });
 
-app.get("/GraphGetTest", async (req, res) => {
-  try {
-    res.status(200).send(data);
-  } catch (error) {
-    console.error("Error:", error);
-    res.status(500).send("Internal Server Error");
-  }
+app.get("/testpdf", (req, res) => {
+  const url = "https://www.intergy.com.au/"; // Replace with the URL you want to convert to PDF
+  const pdfFilename = "generated.pdf";
+
+  const command = `wkhtmltopdf ${url} ${pdfFilename}`;
+  exec(command, (error, stdout, stderr) => {
+    if (error) {
+      console.error(`Error generating PDF: ${error}`);
+      res.status(500).send("Error generating PDF");
+    } else {
+      console.log("PDF generated successfully");
+      // Return the generated PDF as a response
+      res.download(pdfFilename);
+    }
+  });
 });
 
-app.post("/GraphGet", async (req, res) => {
-  try {
-    res.status(200).send(data);
-  } catch (error) {
-    console.error("Error:", error);
-    res.status(500).send("Internal Server Error");
-  }
+app.get("/wktest", (req, res) => {
+  const pdfStream = wkhtmltopdf("https://www.intergy.com.au/");
+  res.setHeader("Content-Type", "application/pdf");
+  pdfStream.pipe(res);
 });
 
-app.get("/convertTest", async (req, res) => {
+app.get("/generate", async (req, res) => {
   try {
-    const browser = await puppeteer.launch({
-      headless: "new",
-      executablePath:
-        "/c/home/site/wwwroot/.cache/puppeteer/chrome/win32-116.0.5845.96/chrome-win32/chrome.exe",
-      args: ["--enable-gpu"],
-    });
-    // const browser = await puppeteer.connect({ browserWSEndpoint: 'wss://chrome.browserless.io/' });
-    const page = await browser.newPage();
+    // Get the absolute path to the HTML template
+    const templatePath = path.join(__dirname, "templates", "average.html");
 
-    // Set viewport width and height
-    await page.setViewport({ width: 1280, height: 720 });
-
-    // Navigate to a data URL with the HTML content
-    await page.goto("https://www.intergy.com.au/", {
-      waitUntil: "networkidle0",
+    const htmlContent = await fs.readFile(templatePath, {
+      encoding: "utf-8",
     });
 
-    const imageBuffer = await page.screenshot({
-      path: `images/chart${new Date().getTime()}.png`,
-      type: "png",
-      fullPage: true,
-    });
-
-    await browser.close();
-
-    res.set("Content-Type", "image/png");
-    // res.send(imageBuffer);
-    res.status(200).send(imageBuffer);
-  } catch (error) {
-    console.error("Error:", error);
-    res.status(500).send({ message: "Internal Server Error", error });
-  }
-});
-
-app.get("/convertHtmlToImg", async (req, res) => {
-  try {
-    const browser = await puppeteer.launch({
-      headless: true,
-    });
-    const page = await browser.newPage();
-
-    // Set viewport width and height
-    await page.setViewport({ width: 1280, height: 720 });
-
-    let type = "average";
-
-    async function findTemplate() {
-      switch (type) {
-        case "average":
-          return await fs.readFile("./templates/average.html", {
-            encoding: "utf8",
-          });
-        case "regulatory":
-          return await fs.readFile("./templates/regulatory.html", {
-            encoding: "utf8",
-          });
-
-        default:
-          return await fs.readFile("index.html", { encoding: "utf8" });
-      }
+    if (!htmlContent) {
+      return res.status(500).send("Error reading template file.");
     }
 
-    // Read the HTML content from the input HTML file
-    const htmlContent = await findTemplate();
+    wkhtmltopdf.command = "c:/wkhtmltopdf/bin/wkhtmltopdf.exe";
 
-    await page.setContent(htmlContent);
+    // Generate PDF from the HTML template
+    const pdfStream = wkhtmltopdf(htmlContent, { pageSize: "letter" });
 
-    // Navigate to a data URL with the HTML content
-    await page.goto(`data:text/html,${htmlContent}`, {
-      waitUntil: "networkidle0",
-    });
+    // Set headers for PDF response
+    res.setHeader("Content-Type", "application/pdf");
+    res.setHeader("Content-Disposition", "inline; filename=generated.pdf");
 
-    // const imageBuffer = await page.screenshot();
-    // Capture screenshot
-    const imageBuffer = await page.screenshot({
-      path: `images/chart${new Date().getTime()}.png`,
-      type: "png",
-      fullPage: true,
-    });
+    console.log(pdfStream, "PDF");
 
-    await browser.close();
-
-    res.set("Content-Type", "image/png");
-    // res.send(imageBuffer);
-    res.status(200).send(imageBuffer);
+    // Pipe the PDF content to the response
+    pdfStream.pipe(res);
   } catch (error) {
-    console.error("Error:", error);
-    res.status(500).send("Internal Server Error");
+    console.log(error);
+    res.status(500).send("Server error");
   }
 });
+
+const puppeteerRoutes = require("./routes/puppeteerRoutes");
+const wkRoutes = require("./routes/wkRoutes");
+
+app.use("/puppetter", puppeteerRoutes);
+app.use("/wkRoutes", wkRoutes);
 
 // Start the server
 const PORT = process.env.PORT || 3002;
